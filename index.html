@@ -152,8 +152,8 @@
 
         <section id="contacto" class="contacto" data-aos="fade-up">
         <h2>Contacto</h2>
-        <p>Dirección: Calle Gourmet 123, Ciudad Italiana</p>
-        <p>Teléfono: +123 456 789</p>
+        <p>Dirección: Calle Las Anonas #405, Ciudad Jardín, San Miguel </p>
+        <p>Teléfono: +503 456 789</p>
         <p>Email: contacto@sirone.com</p>
     </section>
 
@@ -269,24 +269,25 @@
     const mensaje = document.getElementById('mensajeExito');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita que se recargue la página
+        event.preventDefault(); 
 
-        // Mostrar mensaje de éxito
+        
         mensaje.textContent = '¡Tu reserva se ha realizado con éxito!';
         mensaje.style.display = 'block';
 
-        form.reset(); // Limpiar el formulario
+        form.reset(); 
 
-        // Después de 3 segundos, volver al inicio
+        
         setTimeout(() => {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // Desplazamiento suave
+                behavior: 'smooth' 
             });
-        }, 3000); // 3000 ms = 3 segundos
+        }, 3000);
     });
 </script>
     
 
 </body>
+
 </html>
